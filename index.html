@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bitcoin Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main">
+    <h1>₿ <span js-btc>1.2</span></h1>
+    <h1><span js-fiat-symbol>$</span> <span js-fiat>7820.23</span></h1>
+
+    <div class="actions">
+      <button class="action action--edit" js-action="edit">Edit</button>
+      <select js-action="fiat">
+        <option value="USD,$">USD</option>
+        <option value="EUR,€">EUR</option>
+        <option value="GBP,£">GBP</option>
+        <option value="DKK,DKK">DKK</option>
+      </select>
+    </div>
+  </main>
+
+  <script src="checker.js"></script>
+</body>
+</html>
